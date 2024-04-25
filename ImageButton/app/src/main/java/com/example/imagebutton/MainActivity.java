@@ -1,32 +1,27 @@
-package com.example.firstapp;
+package com.example.imagebutton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView meratextview;
+    ImageButton bentley;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        meratextview = findViewById(R.id.clickhere);
-
-        meratextview.setOnClickListener(new View.OnClickListener() {
+        bentley = findViewById(R.id.bentley);
+        bentley.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,RegistrationActivity.class);
-                startActivity(intent);
+                Toast.makeText(MainActivity.this, "You clicked Bentley", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
-
-
 }

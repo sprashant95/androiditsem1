@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/pid"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="Enter your id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pname"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pcity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pcity"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Enter your city"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pcontactno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pcontactno"
+        android:layout_width="326dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="Enter your contact no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="176dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="66dp"
+        android:fontFamily="sans-serif"
+        android:text="Register with us!"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/pid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,8 +14,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
+
     FrameLayout frameLayout;
     BottomNavigationView bottomNavigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,34 +28,32 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView = findViewById(R.id.mybottomnavigation);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
-
-        loadFragment(new BollywoodFragment());
+        loadFragment(new MoviesFragment());
 
     }
 
-    private void loadFragment(Fragment fragment) {
-
+    private void loadFragment(androidx.fragment.app.Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.myframelayout,fragment);
         fragmentTransaction.commit();
     }
 
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
-            case R.id.bollywood:
-                loadFragment(new BollywoodFragment());
+            case R.id.cars:
+                loadFragment(new MoviesFragment());
                 break;
-            case R.id.hollywood:
-                loadFragment(new HollywoodFragment());
+            case R.id.songs:
+                loadFragment(new SongsFragment());
                 break;
-            case R.id.tollywood:
-                loadFragment(new TollywoodFragment());
+            case R.id.artists:
+                loadFragment(new ArtistsFragment());
                 break;
         }
+
         return true;
     }
 }

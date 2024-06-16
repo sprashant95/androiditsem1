@@ -2,18 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/bollywood"
-        android:title="Bollywood"
-        android:icon="@drawable/bollywood"/>
+        android:id="@+id/cars"
+        android:icon="@drawable/caricon"
+        android:title="Cars"/>
 
     <item
-        android:id="@+id/hollywood"
-        android:title="Hollywood"
-        android:icon="@drawable/hollywood"/>
-
+        android:id="@+id/songs"
+        android:icon="@drawable/music"
+        android:title="Songs"/>
     <item
-        android:id="@+id/tollywood"
-        android:title="Tollywood"
-        android:icon="@drawable/tollywood"/>
+        android:id="@+id/artists"
+        android:icon="@drawable/artisticon"
+        android:title="Artists"/>
 
 </menu>

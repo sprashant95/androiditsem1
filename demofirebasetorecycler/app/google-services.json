@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "18612003021",
+    "firebase_url": "https://fir-recycler-62a3d-default-rtdb.firebaseio.com",
+    "project_id": "fir-recycler-62a3d",
+    "storage_bucket": "fir-recycler-62a3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18612003021:android:f718091e0903e389fa0984",
+        "android_client_info": {
+          "package_name": "com.example.demofirebasetorecycler"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc7Y6F00HzgBXa6V9Hx-ARx9xWIcSHNeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
